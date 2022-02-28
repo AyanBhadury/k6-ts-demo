@@ -2,8 +2,7 @@
   "name": "typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "ssh://git@github.com/k6io/example-typescript.git",
-  "author": "Simon Aronsson <simme@k6.io>",
+  "author": "ayanbhadury",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.13.16",
@@ -22,6 +21,6 @@
     "webpack-glob-entries": "^1.0.1"
   },
   "scripts": {
-    "start": "webpack"
+    "start": "webpack && k6 run dist/post-file-test.js"
   }
 }
